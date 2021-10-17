@@ -1,0 +1,132 @@
+:root {
+  --primary: #af1e2d;
+  --light: #f3f3f3;
+  --grey: #8a8a8b;
+  --dark: #212121;
+}
+
+@font-face {
+  font-family: 'Archivo Black';
+  src: url('ArchivoBlack-Regular.ttf');
+}
+
+.back {
+  height: 100vh;
+  background-image: url('y-01.jpg');
+  background-position: center;
+  background-size: cover;
+}
+.jumbotron {
+  margin-top: 20vh;
+}
+@media screen and (max-width: 1024px) {
+  .back {
+    background-size: 260vh;
+  }
+  .kata {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 1680px) {
+  .back {
+    background-size: 260vh;
+  }
+}
+@media screen and (max-width: 570px) {
+  .jumbotron {
+    text-align: center;
+  }
+  .kata {
+    font-size: 15px;
+    text-align: center;
+  }
+  .foto {
+    width: 200px;
+    margin-bottom: 50px;
+  }
+}
+@media screen and (max-width: 370px) {
+  .foto {
+    width: 150px;
+    margin-bottom: 10px;
+  }
+  .kata {
+    font-size: 11px;
+  }
+}
+.banner {
+  font-family: 'Archivo Black';
+}
+span {
+  color: rgb(0, 49, 211);
+}
+.medsos {
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  color: inherit;
+}
+.medsos.one {
+  font-size: 40px;
+}
+.text {
+  font-size: 23px;
+  color: white;
+}
+.background {
+  background-color: rgb(19, 19, 19);
+  height: 100vh;
+}
+section ul {
+  display: flex;
+  color: white;
+  margin-bottom: 10px;
+}
+section ul li {
+  list-style: none;
+  padding: 8px 20px;
+  margin: 5px;
+  cursor: pointer;
+}
+
+section ul li.aktive {
+  background-color: cornflowerblue;
+  color: oldlace;
+}
+/* transisi */
+
+.loading-screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #04027a20;
+  z-index: 999;
+  transform: scaleX(0);
+}
+.loading-screen.two {
+  background-color: black;
+}
+.transition-3 {
+  position: fixed;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 101;
+  background-color: var(--dark);
+  transition: 0.5s ease-out;
+}
+
+.transition-3.is-active {
+  top: 0;
+}
+.buka {
+  text-align: center;
+  justify-content: space-between;
+  align-items: center;
+}
+.mar {
+  margin-top: 40px;
+}
